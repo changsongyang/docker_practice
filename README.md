@@ -2,7 +2,7 @@
 
 [![图](https://img.shields.io/github/stars/yeasy/docker_practice.svg?style=social&label=Stars)](https://github.com/yeasy/docker_practice) [![图](https://img.shields.io/github/release/yeasy/docker_practice/all.svg)](https://github.com/yeasy/docker_practice/releases) [![图](https://img.shields.io/badge/Based-Docker%20Engine%20v29.x-blue.svg)](https://docs.docker.com/engine/release-notes/) [![图](https://img.shields.io/badge/Docker%20%E6%8A%80%E6%9C%AF%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E6%88%98-jd.com-red.svg)][1]
 
-[**v1.7.2**](https://github.com/yeasy/docker_practice/releases/tag/v1.7.2) | [PDF 下载](https://github.com/yeasy/docker_practice/releases/latest)
+[**v1.7.5**](https://github.com/yeasy/docker_practice/releases/tag/v1.7.5) | [PDF 下载](https://github.com/yeasy/docker_practice/releases/latest)
 
 ## 下载离线版本
 
@@ -89,6 +89,18 @@ docker run -it --rm -p 4000:80 ccr.ccs.tencentyun.com/dockerpracticesig/docker_p
 ```
 启动后访问 [本地阅读地址](http://localhost:4000)。
 [离线阅读说明](https://github.com/yeasy/docker_practice/wiki/%E7%A6%BB%E7%BA%BF%E9%98%85%E8%AF%BB%E5%8A%9F%E8%83%BD%E8%AF%A6%E8%A7%A3)
+
+
+#### 方式 3：本地构建
+下载mdpress.exe二进制文件，配置环境变量
+
+```bash
+$env:MDPRESS_CHROME_PATH="C:\Program Files\Google\Chrome\Application\chrome.exe"
+mdpress.exe build --format site,pdf,html,epub
+mdpress.exe build --format pdf --output docker_practice.pdf  
+```
+
+
 
 ## 社区交流
 
