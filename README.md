@@ -90,6 +90,18 @@ mdpress serve
 docker run -it --rm -p 4000:80 ccr.ccs.tencentyun.com/dockerpracticesig/docker_practice:vuepress
 ```
 
+### 本地构建
+
+下载mdpress.exe二进制文件，配置环境变量
+
+```bash
+$env:MDPRESS_CHROME_PATH="C:\Program Files\Google\Chrome\Application\chrome.exe"
+mdpress.exe build --format site,pdf,html,epub
+mdpress.exe build --format pdf --output docker_practice.pdf  
+```
+
+
+
 ## 社区交流
 
 - [GitHub Discussions](https://github.com/yeasy/docker_practice/discussions)（技术问答、交流）
